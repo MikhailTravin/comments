@@ -55,9 +55,9 @@
         script_textarea.style.height = "1px";
         const scrollHeight = script_textarea.scrollHeight;
         let newHeight;
-        if (!script_textarea.value.trim()) newHeight = minHeight; else if (scrollHeight <= minHeight) newHeight = minHeight; else newHeight = Math.min(scrollHeight, 80);
+        if (!script_textarea.value.trim()) newHeight = minHeight; else if (scrollHeight <= minHeight) newHeight = minHeight; else newHeight = Math.min(scrollHeight, 170);
         script_textarea.style.height = `${newHeight}px`;
-        script_textarea.style.overflowY = scrollHeight > 80 ? "auto" : "hidden";
+        script_textarea.style.overflowY = scrollHeight > 170 ? "auto" : "hidden";
     }
     function initTextarea() {
         const minHeight = getMinHeight();
